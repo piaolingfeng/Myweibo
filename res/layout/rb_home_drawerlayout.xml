@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="match_parent"
+    android:background="#e5123063" >
+
+    <ImageButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/rb_home_drawerlayout_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null" />
+
+    <ListView
+        android:id="@+id/rb_home_drawerlayout_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:layout_marginTop="20dp"
+        android:listSelector="@drawable/rb_home_drawerlayout_listview_bg"
+        android:layout_below="@+id/rb_home_drawerlayout_ib"
+        android:layout_above="@+id/rb_home_drawerlayout_ll" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/rb_home_drawerlayout_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/rb_home_drawerlayout_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/avatar_default"
+            android:drawableTop="@drawable/sidebar_icon_offline"
+            android:text="离线"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/rb_home_drawerlayout_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/avatar_default"
+            android:drawableTop="@drawable/sidebar_icon_display"
+            android:text="显示"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/rb_home_drawerlayout_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/avatar_default"
+            android:drawableTop="@drawable/sidebar_icon_theme"
+            android:text="主题"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/rb_home_drawerlayout_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/avatar_default"
+            android:drawableTop="@drawable/sidebar_icon_night"
+            android:text="夜晚"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>

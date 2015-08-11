@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/rb_notifi_rb"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <RadioButton
+            android:id="@+id/rb_notifi_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:background="@drawable/rb_notifi_left"
+            android:text="主页"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rb_notifi_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/rb_notifi_mid"
+            android:text="原创"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rb_notifi_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/rb_notifi_right"
+            android:text="评论"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="13sp" />
+        
+    </RadioGroup>
+
+</LinearLayout>
